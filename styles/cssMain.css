@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+/* ======= general ======= */
+
+body {
+	color: #777;
+  	font-size: medium;
+	text-align: left;
+  	font-weight: 100;
+	font-family: "Gill Sans", Helvetica, Arial, sans-serif;
+}
+
+#banner {
+	position: absolute; 
+	width: 720px;
+	height: 100px;
+	background-image: url("../images/banner1.png");
+	background-repeat: no-repeat;
+	background-size: 720px, 100px, contain;
+}
+
+
+span {
+	color: #555;
+  	font-size: medium;
+  	font-weight: 400;
+}
+
+h1 {
+  	font-weight: 400;
+}
+
+/* ======= nav ======= */
+
+ul {
+	width: 720px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+	list-style: none;
+}
+
+li { 
+	display: inline; 
+	width: 20%;
+    margin: 0;
+    padding: 0;
+	float: left;
+}
+
+a {
+	display: block; 
+	float: left;
+	width: 100%;
+	height: 100%;
+  	line-height: 24px;
+    margin: 0;
+    padding: 0;
+	color: #FFFFFF;
+  	font-weight: 400; 
+  	text-align: center;
+	text-decoration: none;
+	font-family: "Gill Sans", Helvetica, Arial, sans-serif;
+}
+
+/* ======= siteNav ======= */
+
+.siteNav {
+	position: absolute; 
+	left:10px; 
+	top:112px; 
+	width:720px; 
+	height:24px; 
+}
+
+.siteNav ul li a:link, a:visited {
+	background-color: #98bf21;
+}
+
+.siteNav ul li a:hover, a:active, a.thispage {
+	background-color: #7A991A;
+}
+
+/* ======= article ======= */
+
+#article {
+	position: absolute; 
+	left:10px; 
+	top:160px; 
+	width:720px;
+  	margin: 10px;
+	padding: 2px;
+	font-family: "Gill Sans", Helvetica, Arial, sans-serif;
+}
+
+#TomPic {
+  	margin: 15px;
+	padding: 2px;
+	float: right;
+	width: 198px;
+	height: 256px;
+	border: 1px solid black;
+}
+
+/* ======= resume ======= */
+
+#TomPic2 {
+  	margin: 15px 5px 0px 15px;
+	padding: 2px;
+	float: right;
+	width: 100px;
+	height: auto;
+	border: 1px solid black;
+}
+
+h2 {
+	display: block; 
+	float: left;
+	width: 700px;
+  	margin: 0px 0px;
+	background-color: #eee;
+  	margin: 0px;
+	padding: 5px;
+	color: #900;
+  	font-size: medium;
+  	font-weight: 300;
+	text-align: left;
+	text-decoration: none;
+	font-family: "Gill Sans", Helvetica, Arial, sans-serif;
+}
+
+.jobhead {
+	color: #300;
+  	font-weight: 500;
+  	font-size: medium;
+  	margin: 2px;
+	padding: 2px;
+	text-align: left;
+	text-decoration: none;
+	font-family: "Gill Sans", Helvetica, Arial, sans-serif;
+}
+
+.resText {
+	position: relative; left:20px; 
+	padding: 2px 2px 0px 0px;
+	width: 700px;
+	font-family: "Gill Sans", Helvetica, Arial, sans-serif;
+}
+
+ul.resume {
+    margin: 0;
+    padding: 0;
+	list-style: none;
+}
+
+li.resume { 
+	display: inline; 
+	width: 100%;
+    margin: 2;
+    padding: 2;
+	clear: both;
+}
+
+/* ======= fancybox ======= */
+.image-gallary {
+	position: absolute; 
+	display: inline-block;
+	left:10px; 
+	top:200px;
+    height: 90px;
+	margin: 2px;
+	float: left;
+}
+
+.fancybox {
+	display: inline-block;
+	left:10px; 
+    margin: 5px;
+}
+
+
+.clearfix {
+	overflow: auto;
+	clear: both;
+}
+
+/* ======= media queries ======= */
+
+@media screen and (max-width: 768px) {
+
+
+	.header {
+		display: block;
+		width: 100%;
+		height: 100px;
+	}
+
+	#banner {
+		display: inline-block;
+		position: relative;
+		left: 0;
+		top: 0;
+		width: 60%;
+		height: 100px;
+		background-image: url("../images/banner1_sm.png");
+		background-repeat: no-repeat;
+		background-size: 310px, 100px, contain;
+	}
+
+	.siteNav {
+		display: inline-block;
+		position: relative;
+		left: 0;
+		top: 0;
+		height: auto;
+		width: 35%;
+	}
+
+	ul {
+		width: 200px;
+	    height: auto;
+	    margin: 0;
+	    padding: 0;
+		list-style: none;
+	}
+
+	li {
+		display: block;
+		float: none;
+		width: 200px;
+	}
+
+	a {
+		float: none;
+	  	line-height: 16px;
+	}
+
+	h2 {
+		width: 90%;
+		margin: 10px;
+	}
+
+	#article {
+		width: auto;
+	}
+	
+	.jobhead {
+		float: left;
+	}
+
+	.resText {
+		width: auto;
+	}
+}
+
+
+
+
