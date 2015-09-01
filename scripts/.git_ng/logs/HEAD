@@ -1,0 +1,12 @@
+0000000000000000000000000000000000000000 1f220543303ae2e6a534804d0e823e7cf43bcc07 tomBeach <tbeach2k@gmail.com> 1435233201 -0400	commit (initial): initial commit
+1f220543303ae2e6a534804d0e823e7cf43bcc07 1f220543303ae2e6a534804d0e823e7cf43bcc07 tomBeach <tbeach2k@gmail.com> 1435233295 -0400	checkout: moving from master to LOL_testBranch1
+1f220543303ae2e6a534804d0e823e7cf43bcc07 78bab2fe61d310b03e84d69490ba57346995243f tomBeach <tbeach2k@gmail.com> 1435233591 -0400	commit: test change 1
+78bab2fe61d310b03e84d69490ba57346995243f 1f220543303ae2e6a534804d0e823e7cf43bcc07 tomBeach <tbeach2k@gmail.com> 1435233710 -0400	checkout: moving from LOL_testBranch1 to master
+1f220543303ae2e6a534804d0e823e7cf43bcc07 78bab2fe61d310b03e84d69490ba57346995243f tomBeach <tbeach2k@gmail.com> 1435233745 -0400	merge LOL_testBranch1: Fast-forward
+78bab2fe61d310b03e84d69490ba57346995243f 33638f0b09683dbe00e18b7ca1e3ba7e2637d5e0 tomBeach <tbeach2k@gmail.com> 1435233983 -0400	commit: test change 2
+33638f0b09683dbe00e18b7ca1e3ba7e2637d5e0 33638f0b09683dbe00e18b7ca1e3ba7e2637d5e0 tomBeach <tbeach2k@gmail.com> 1435234032 -0400	checkout: moving from master to LOL_branch2
+33638f0b09683dbe00e18b7ca1e3ba7e2637d5e0 3e87afed8f86c9962e3709f2d4168a903029611f tomBeach <tbeach2k@gmail.com> 1435234227 -0400	commit: change on LOL_branch2
+3e87afed8f86c9962e3709f2d4168a903029611f 33638f0b09683dbe00e18b7ca1e3ba7e2637d5e0 tomBeach <tbeach2k@gmail.com> 1435234250 -0400	checkout: moving from LOL_branch2 to master
+33638f0b09683dbe00e18b7ca1e3ba7e2637d5e0 3e87afed8f86c9962e3709f2d4168a903029611f tomBeach <tbeach2k@gmail.com> 1435234494 -0400	checkout: moving from master to LOL_branch2
+3e87afed8f86c9962e3709f2d4168a903029611f 101ed71bbda5af624bde821eddd4f81d6389ce6a tomBeach <tbeach2k@gmail.com> 1435237758 -0400	pull: Fast-forward
+101ed71bbda5af624bde821eddd4f81d6389ce6a e184eb84f19f1d1bc38fefe6dbbd53f8c9431d7a tomBeach <tbeach2k@gmail.com> 1441102480 -0400	commit: adding updated scripts
