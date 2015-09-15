@@ -1,0 +1,376 @@
+/*@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css');*/
+
+/* ======= SASS variables =======
+@hiddenMenuH = 50px;
+
+*/
+
+/*$colorOne: #2A52BE; // Cerulean Blue
+$colorTwo: #bada55; // Jesse Green
+$colorThree: #bada55; // Jesse Green
+$colorFour: #bada55; // Jesse Green*/
+
+/* ======= general ======= */
+html, body, .viewport {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: block;
+    position: relative;
+    overflow-x: hidden;
+}
+body::after {
+    content: "";
+    background: url(images/bg2.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/* ======= rows & columns ======= */
+.row, .column {
+    box-sizing: border-box;
+}
+.row {
+    overflow: auto;
+    /*border: 1px solid rebeccapurple;*/
+}
+.column {
+    float: left;
+    text-align: center;
+    /*border: 1px solid Tomato;*/
+}
+/*.column:before {
+    content: "\00a0";
+}*/
+
+/* ======= columns ======= */
+.column-1 { width: 8.333%; }
+.column-2 { width: 16.66%; }
+.column-3 { width: 25%; }
+.column-4 { width: 33.33%; }
+.column-5 { width: 41.66%; }
+.column-6 { width: 50%; }
+.column-7 { width: 58.33%; }
+.column-8 { width: 66.66%; }
+.column-9 { width: 75%; }
+.column-10 { width: 83.33%; }
+.column-11 { width: 91.66%; }
+.column-12 { width: 100%; }
+
+/* ======= ======= ======= pages ======= ======= ======= */
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 10;
+    border: 1px solid red;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 10;
+    /*border: 1px solid red;*/
+}
+.design, .client, .code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 10;
+    border: 1px solid red;
+}
+
+.section-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+/* ======= hidden banner ======= */
+#hiddenBannerRow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    padding-bottom: 10px;
+    background-color: rgba(220, 220, 220, 0.9);;
+    z-index: 3;
+    /*border: 1px solid red;*/
+}
+/* ======= info ======= */
+#infoRow {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    /*border: 1px solid green;*/
+}
+/* ======= banner ======= */
+#bannerRow {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    /*border: 1px solid green;*/
+}
+
+/* ======= banner components ======= */
+.logo, .navPanelLabels, .navPanelContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo {
+    width: 260px;
+    justify-content: space-between;
+}
+.logo_h, .navPanelLabels_h, .navPanelContainer_h {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+.logo_h {
+    width: 260px;
+    justify-content: flex-end;
+}
+.navPanelLabels_h {
+    justify-content: center;
+}
+.navPanelContainer {
+    width: 320px;
+}
+.logo-sm > p {
+    font-weight: bold;
+    text-align: right;
+    line-height: 0.4em;
+    margin-top: 10px;
+}
+
+/* ======= navPanel ======= */
+.navPanel {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 33%;
+    /*border: 1px solid red;*/
+}
+.navLink, .navLink_h {
+    width: 30px;
+    height: 30px;
+    margin: 10px 5px 10px 5px;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px #888888;
+}
+/*.navLink:hover {
+    background-color: green;
+}*/
+.navLink.clicked {
+    background-color: red;
+    box-shadow: 0 0 0 white;
+}
+
+/* ======= text ======= */
+.logoText, .pageText {
+    color: #ccc;
+    font-size: 4em;
+    line-height: 0.8em;
+    text-align: right;
+    padding-left: 10px;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+.labelText, .labelText_h {
+    color: #333;
+    font-size: 1em;
+    line-height: 2em;
+    text-align: center;
+    padding: 10px 10px 5px 10px;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+.logoText-sm {
+    color: #ccc;
+    font-size: 1em;
+    line-height: 0.5em;
+    text-align: right;
+    padding-left: 10px;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+#linkTitle, #linkText {
+    content: "\00a0";
+    color: red;
+    font-size: 1.5em;
+    height: 2em;
+    text-align: left;
+    overflow: visible;
+    padding: 10px 10px 5px 10px;
+    font-family: 'Lato', sans-serif;
+    /*font-family: 'Kotta+One', sans-serif;*/
+}
+#infoTitle {
+    font-size: 3em;
+    text-align: right;
+}
+#bannerRow {
+    overflow: visible;
+}
+
+/* ======= ======= ======= PROFILE ======= ======= ======= */
+.leftSide, .rightSide {
+    height: 100%;
+}
+
+.pageText {
+    color: #FF9900;
+    line-height: 3em;
+    text-align: left;
+    margin-left: 70px;
+    z-index: 2;
+}
+.hilite {
+    color: #FF9900;
+}
+.skills, .rankings, .education, .experience, .statement {
+    font-size: 1em;
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+}
+.profileGroup {
+    margin: 20px 0;
+    padding: 0 20px;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+
+/* ======= skills ======= */
+.skills {
+    /*padding-top: 100px;*/
+    text-align: left;
+    background-color: #AA7939;
+}
+.skillsGroup {
+    text-align: left;
+    background-color: #D4A76A;
+}
+
+/* ======= rankings ======= */
+.rankings {
+    background-color: #AA5939;
+}
+.rankingsGroup {
+    text-align: left;
+    background-color: #D4886A;
+}
+
+/* ======= education ======= */
+.educationRow {
+    height: 100%;
+}
+.education {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    margin: 10;
+    background-color: #349072;
+}
+.educationGroup {
+    text-align: left;
+    background-color: #679072;
+}
+.school {
+    line-height: 1em;
+    font-size: 1em;
+    font-weight: bold;
+}
+.degree {
+    line-height: 0.8em;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+
+/* ======= statement ======= */
+.statementRow {
+    /*padding-top: 100px;*/
+    text-align: right;
+    background-color: #AA8E39;
+}
+.statementGroup {
+    text-align: left;
+    background-color: #D4BA6A;
+}
+.statementText {
+    /*padding-top: 100px;*/
+    text-align: left;
+    margin: 0;
+}
+
+/* ======= experience ======= */
+.experience {
+    height: 100%;
+    text-align: left;
+    background-color: #D4A76A;
+}
+.experienceGroup {
+    text-align: left;
+    background-color: #FFDBAA;
+}
+
+.experience>p {
+    font-family: 'Lato', sans-serif;
+}
+.jobHeader {
+    margin: 10px 0;
+}
+.jobTitle {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 15px 0 0 0;
+}
+.jobimg {
+    float: left;
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+
+/* ======= ======= ======= ARCHIVE ======= ======= =======
+
+#bannerRow.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.logoText.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+======= ======= ======= ARCHIVE ======= ======= ======= */

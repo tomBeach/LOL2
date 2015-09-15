@@ -1,102 +1,300 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8" />
-<title> home </title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tom Beach">
+    <meta name="description" content="Tom Beach portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tom Beach portfolio</title>
 
-<!-- ======= ======= ======= styles ======= ======= ======= -->
-<link id="mainStyles" rel="stylesheet" type="text/css" href="styles/cssMain.css">
+    <!-- ======= fonts ======= -->
+    <link href='https://fonts.googleapis.com/css?family=Allerta+Stencil' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Stardos+Stencil:400,700' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Kotta+One|Cantarell:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700italic,700' rel='stylesheet' type='text/css'>
 
+    <!-- ======= frameworks ======= -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- ======= styles ======= -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
-<!-- ======= banner =======  --> 
-<div id="banner"><img src="images/banner1.png" width="720" height="100"/></div>
+
+    <!-- ======= ======= ======= home ======= ======= ======= -->
+    <div id="#home-page" class="home">
+
+        <!-- ======= hidden banner ======= -->
+        <div id="hiddenBannerRow" class="row">
+            <div class="column column-1 logo-sm"><p>tom</p><p>beach</p></div>
+            <div class="column column-2 logo_h">
+                <div class="logoText"><p id="logo3_h" class="pageLink hilite">toolbox</p></div>
+            </div>
+            <div class="column column-1 navPanelLabels_h">
+                <div class="labelText"><p id="label3_h">profile</p></div>
+            </div>
+            <div class="column column-8 navPanelContainer_h">
+                <div class="navLink_h"></div>
+                <div class="labelText_h"><p id="label2_h">process</p></div>
+                <div class="navLink_h"></div>
+                <div class="navLink_h"></div>
+                <div class="navLink_h"></div>
+                <div class="labelText_h"><p id="label1_h">portfolio</p></div>
+                <div class="navLink_h"></div>
+                <div class="navLink_h"></div>
+                <div class="navLink_h"></div>
+                <div class="navLink_h"></div>
+                <div class="navLink_h"></div>
+            </div>
+        </div> <!-- end banner -->
+
+        <!-- ======= info ======= -->
+            <div id="infoRow" class="row">
+                <div class="column column-1"></div>
+                <div class="column column-2 logo"></div>
+                <div class="column column-1"></div>
+                <div id="linkTitle" class="column column-2"></div>
+                <div class="column column-6"></div>
+            </div>
+
+        <!-- ======= banner ======= -->
+        <div id="bannerRow" class="row">
+            <div class="column column-1 logo-sm"></div>
+            <div class="column column-2 logo">
+                <div class="logoText"><p id="logo1">tom</p></div>
+                <div class="logoText"><p id="logo2">beach</p></div>
+                <div class="logoText hilite"><p id="logo3">toolbox</p></div>
+            </div>
+            <div class="column column-1 navPanelLabels">
+                <div class="labelText"><p id="label1">portfolio</p></div>
+                <div class="labelText"><p id="label2">process</p></div>
+                <div class="labelText"><p id="label3">profile</p></div>
+            </div>
+            <div class="column column-2 navPanelContainer">
+                <div class="navPanel">
+                    <div id="blackjack" class="navLink"></div>
+                    <div id="stoxx" class="navLink"></div>
+                    <div id="pixmix" class="navLink"></div>
+                    <div id="loclight" class="navLink"></div>
+                    <div id="handoff" class="navLink"></div>
+                </div>
+                <div class="navPanel">
+                    <div id="design" class="navLink"></div>
+                    <div id="client" class="navLink"></div>
+                    <div id="code" class="navLink"></div>
+                </div>
+                <div class="navPanel">
+                    <div id="profile" class="navLink"></div>
+                </div>
+            </div>
+            <div id="linkText" class="column column-5"></div>
+            <div class="column column-1"></div>
+        </div> <!-- end banner -->
+    </div> <!-- end home -->
 
 
-<!-- ======= pageNav =======  --> 
-<div class="siteNav"><nav>
-	<ul>
-		<li><a class="thispage" href="index.html">about me</a></li>
-		<li><a href="resume.html">resume</a></li>
-		<li><a href="portfolio.html">portfolio</a></li>
-		<li><a href="house.html">house</a></li>
-		<li><a href="LOL2.html">LOL</a></li>
-<!-- 		<li><a href="dbActors.html">LOL 2.0</a></li>
- -->	</ul>	
-</nav></div>
+    <!-- ======= ======= ======= profile ======= ======= ======= -->
+    <div id="profile-page" class="container-fluid profile">
+
+        <div class="row mainRow">
+            <div class="col-md-1 gutter"></div>
+            <div class="col-md-10">
+
+                <div class="row bannerRow">
+                    <!-- ======= banner ======= -->
+                    <div class="col-md-12">
+                        <span class="pageText">profile</span>
+                        <a href="tomBeachResume.docx">my resume</a>
+                    </div>
+                </div>
+
+                <div class="row centerRow">
+                    <!-- ======= left side ======= -->
+                    <div class="col-md-5 leftSide">
+                        <div class="row skillsRow">
+
+                            <!-- ======= skills ======= -->
+                            <div class="skills">
+                                <p class="profileGroup skillsGroup"> TECHNICAL SKILLS </p>
+                                <dl>
+                                    <dt>Databases</dt>
+                                    <dd>PostgreSQL, Mysql</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Frontend</dt>
+                                    <dd>JavaScript, jQuery, D3, Bootstrap, Flexbox, AJAX/JSON, CSS/SASS, HTML, Visual Basic for Applications</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Backend</dt>
+                                    <dd>Rails/Ruby, Node.js, Sequelize, Devise</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Management/Deployment</dt>
+                                    <dd>Command Line, Git, GitHub, Heroku</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Methodologies</dt>
+                                    <dd>Object Oriented Programming, Responsive Design, MVC Pattern, User Stories/User Advocacy,  Wireframing/Flowchrting/Storyboards, ERDs, Agile Development</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Software</dt>
+                                    <dd>Photoshop, Freehand, Final Cut Pro, Microsoft Office</dd>
+                                </dl>
+                            </div>
+
+                            <!-- ======= rankings ======= -->
+                            <div class="rankings" id="skillsGraph">
+                                <p class="profileGroup rankingsGroup"> SKILL RANKINGS </p>
+                                <p class="statementText">These are the skills I have used on my portfolio projects.  The graph indicates my subjective rating of each skill level relative to the others.  Coming soon -- a second data set representing my level of interest in pursuing work in these areas.  </p>
+                            </div>
+                        </div>
+
+                        <!-- ======= education ======= -->
+                        <div class="row educationRow">
+                            <div class="col-md-12 education">
+                                <p class="profileGroup educationGroup"> EDUCATION </p>
+                                <p class="school">General Assembly (7/15 - 10/15)<br>
+                                    Washington, DC</p>
+                                <p class="degree"> Web Development Immersive Course</p>
+
+                                <p class="school">Johns Hopkins Univ. School of Nursing (2007)<br>
+                                    Baltimore, MD </p>
+                                <p class="degree"> Bachelor of Science, Nursing </p>
+
+                                <p class="school">St. Lawrence University (1978)<br>
+                                    Canton, NY </p>
+                                <p class="degree"> Bachelor of Science, Chemistry</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ======= right side ======= -->
+                    <div class="col-md-7 rightSide">
+                        <div class="row statementRow">
+                            <div class="col-md-12 statement">
+                                <p class="profileGroup statementGroup"> OVERVIEW </p>
+                                <p class="statementText">Full-stack web developer with a passion for highly interactive products that focus on education and training. Strong desire to synthesize complex data and innovative content into accessible, engaging and experiential applications. Empathetic outlook that is client focused, collaborative and fueled by curiosity.</p>
+                            </div>
+                        </div>
+                        <div class="row experienceRow">
+                            <div class="col-md-12 experience">
+
+                                <p class="profileGroup experienceGroup">WEB</p>
+
+                                <div class="jobHeader">
+                                    <img class="jobimg" src="images/ga.png" alt="GA">
+                                    <p class="jobTitle"> Web Development Immersive, (7/15 - 9/15)<br>
+                                    General Assembly, Washington, DC</p>
+                                </div>
+                                <p>Full-stack web development program focused on common best practices in object-oriented programming, MVC frameworks, data modeling, and test-driven development. Developed a portfolio of individually focused and collaboratively focused projects. Projects include:</p>
+                                <p> Blackjack -- card game for 1-3 players programmed in javascript with d3 visuals
+                                <p> PixMix -- photo sorting and categorizing app built on Rails</p>
+                                <p> Stoxx -- </p>
+
+                                <div class="jobHeader">JavaScript Developer, (3/15 - 6/15)<br>
+                                    Lighing On Location Application Demo
+                                </div>
+
+                                <p class="profileGroup experienceGroup">MEDIA</p>
+
+                                <div class="jobHeader">
+                                    <img class="jobimg" src="images/dbLogo2.png" alt="dB">
+                                    <p class="jobTitle">Videographer/Lighting Director (10/03 - 6/06)<br>
+                                    Washington, DC</p>
+                                </div>
+                                <p>Freelance lighting director and videographer for regional film and video productions.  Partial client list: Cornell University (Ithaca), Tompkins County Tourism (Ithaca), Imagination Stage (Bethesda), Washington Source for Lighting (Hyattsville), WJLA-TV Newschannel 8, Blazing Sharp Productions, Inc., Teach For America, The Wire (Blown Deadline Productions), Rob Lyall Productions, Inc., BlueRock Productions</p>
+
+                                <div class="jobHeader">
+                                    <img class="jobimg" src="images/Maret.png" alt="Maret">
+                                    <p class="jobTitle">Technology Educator (7/99 - 7/03)<br>
+                                    Maret School, Washington, DC</p>
+                                </div>
+                                <p>Developed web technology, computer literacy and video production courses for advanced high school students.  Developed database-driven web applications (php/mysql/apache) for classroom support. Managed computer labs (Mac and PC) for student and faculty use.
+
+                                <div class="jobHeader">
+                                    <img class="jobimg" src="images/dbLogo2.png" alt="dB">
+                                    <p class="jobTitle">Web Developer/Instructional Designer (6/96 - 4/99)<br>
+                                    Washington, DC</p>
+                                </div>
+                                <p>Full-time and free-lance instructional designer/developer for numerous organizations including National Public Radio, Center For Educational Design and Communication, Electronic Learning Facilitators, American Red Cross, American Chemical Society.
+                                  * Designed and developed interactive training programs and simulations
+                                  * Worked directly with clients and production teams to develop/manage projects
+                                  * Used bid models and project tracking tools to manage budgets
+                                  * Developed database-driven web sites using php/mysq
+                                  * Set up and configured web servers (Apache, Microsoft IIS)</p>
+
+                                <div class="jobHeader">
+                                    <img class="jobimg" src="images/IC.jpg" alt="IC">
+                                    <p class="jobTitle">Writer/Producer, Unit Director (7/88 - 3/96)<br>
+                                    Professional Production Unit, Ithaca College, Ithaca, NY</p>
+                                </div>
+                                <p>* Produced award-winning promotional and educational media (partial list below)
+                                * Performed all aspects of video production including lighting design, videography, sound recording and mixing, non-linear post-production
+                                * Developed production schedules and budgets, hired and coordinated production crews and talent; assigned work through all phases of production
+                                * Established advanced Digital Media Lab for non-linear video post-production, interactive media development, computer graphics/animation (2D and 3D)</p>
+
+                                <p class="profileGroup experienceGroup">HEALTH CARE</p>
+                                <div class="jobHeader">
+                                    <img class="jobimg" src="images/medstar.png" alt="NRH">
+                                    <p class="jobTitle">Primary Nurse II (3/08 - 8/19/14)<br>
+                                    National Rehabilitation Hospital, Washington, DC</p>
+                                </div>
+                                <p>Provided medical care and team-based rehabilitation support for patients, their families, and the wider community.  Provide health education to patients and family caregivers.</p>
+
+                                <div class="jobHeader">
+                                    <img class="jobimg" src="images/medstar.png" alt="Georgetown">
+                                    <p class="jobTitle">Clinical Nurse I  (9/07 - 2/08)<br>
+                                    Georgetown University Hospital, Washington, DC</p>
+                                </div>
+                                <p>Performed a wide variety of patient care functions on medical/surgical unit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-1 gutter"></div>
+        </div>
+    </div> <!-- end profile -->
 
 
-<!-- ======= profile =======  --> 
-<div><nav id="miniNav"></nav></div>
+    <!-- ======= ======= ======= design ======= ======= ======= -->
+    <div id="design-page" class="container-fluid design">
+        design under construction
+    </div> <!-- end process -->
 
 
-<!-- ======= profile =======  --> 
-<div id="article">
-	<div>
-<h2>BACKGROUND</h2><br><br><br>
-
-	<img id="TomPic" src="images/TomPic1.jpg" width="240" height="320" alt="career overview">
-Though I began my career as a video Writer/Producer with Eastman Kodak Company, my most relevant experience is grounded by my work as Director of the Professional Production Unit at the Roy H. Park School of Communications, Ithaca College.  The position brought me into regular contact with members of the college community — students, faculty and administrators — and involved developing, managing and producing video pieces for clients throughout the college and in the regional business environment. I also established and supported a Digital Media Lab for non-linear video editing, graphic design and interactive media development.  The fundamental binary goal of the “Pro Unit” was to provide professional work experience for students in the Film, Television and Corporate Communications departments while supporting the wider academic and recruitment missions of the college.  Several of our video projects won awards in professional media contests (please see resume) — a tribute to the high caliber of work our student production teams were able to deliver.
-<p>
-After moving to Washington I spent several years working as a freelance instructional designer and web developer with various educational media organizations.  Most of these projects were developed with Adobe Director, and I was responsible for scriptwriting, storyboarding, programming and budgeting.  I was able to leverage these skills for the classroom setting as a technology educator at the Maret School, where I developed and taught courses in digital video production, web development and computer literacy. Before returning to school for a Nursing degree (which built on my long-standing interest in science and healthcare), I also worked as a grip/gaffer/DP for local production houses, specializing in documentaries, commercials and shorts.  Most recently I have been employed at National Rehabilitation Hospital (Medstar NRH) as a Registered Nurse with a certification in Rehabilitation Nursing.</p>
-	</div>
-</div>
+    <!-- ======= ======= ======= client ======= ======= ======= -->
+    <div id="client-page" class="container-fluid client">
+        client under construction
+    </div> <!-- end process -->
 
 
-<!-- ======= ======= ======= scripts ======= ======= ======= -->
-<!-- <script src="scripts/modernizr.js"></script>
-<script src="scripts/tomScripts.js"></script>
-<script src="scripts/objects.js"></script>
-<script src="scripts/canvas.js"></script>
-<script src="scripts/pages.js"></script>
-<script src="scripts/data.js"></script> -->
+    <!-- ======= ======= ======= code ======= ======= ======= -->
+    <div id="code-page" class="container-fluid code">
+        code under construction
+    </div> <!-- end process -->
+
+
+    <!-- ======= frameworks ======= -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+
+    <!-- ======= scripts ======= -->
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="d3_skills.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            console.log('jQuery loaded');
+            console.log('document ready');
+            init();
+        });
+    </script>
 
 </body>
 </html>
 
-	
+<!-- ======= ======= ======= ARCHIVE ======= ======= =======
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<!-- ======= ======= ======= scripts ======= ======= ======= -->
-
-
+ -->
