@@ -68,7 +68,7 @@ body::after {
 .home {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
     height: 100%;
     margin: 10;
@@ -123,6 +123,9 @@ body::after {
     align-items: stretch;
     justify-content: flex-start;
     /*border: 1px solid green;*/
+}
+#tempRow1 {
+    height: 200px;
 }
 /* ======= banner ======= */
 #bannerRow {
@@ -216,7 +219,7 @@ body::after {
     padding-left: 10px;
     font-family: 'Allerta Stencil', sans-serif;
 }
-#linkTitle, #linkText {
+#linkTitle, #linkText, #message {
     content: "\00a0";
     color: red;
     font-size: 1.5em;
@@ -226,6 +229,17 @@ body::after {
     padding: 10px 10px 5px 10px;
     font-family: 'Lato', sans-serif;
     /*font-family: 'Kotta+One', sans-serif;*/
+}
+#message:before {
+    content: "\00a0";
+}
+#message {
+    width: 620px;
+    overflow: visible;
+    color: CadetBlue;
+}
+.tempSpace {
+    color: White;
 }
 #infoTitle {
     font-size: 3em;

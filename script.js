@@ -22,7 +22,7 @@ function init() {
             {linkEl: null,
             linkId: "client",
             linkTitle: "client",
-            linkText: "Under construction...  Stay tuned!",
+            linkText: "My approach to client goals...",
             linkColor: "#2D882D",
             linkLeft: 0,
             linkTop: 0
@@ -31,7 +31,7 @@ function init() {
             {linkEl: null,
             linkId: "design",
             linkTitle: "design",
-            linkText: "Under construction...  Stay tuned!",
+            linkText: "My design process...",
             linkColor: "#55AA55",
             linkLeft: 0,
             linkTop: 0
@@ -40,7 +40,7 @@ function init() {
             {linkEl: null,
             linkId: "code",
             linkTitle: "code",
-            linkText: "Under construction...  Stay tuned!",
+            linkText: "Developing database structures, data models, object classes, inheritance, logic...",
             linkColor: "#116611",
             linkLeft: 0,
             linkTop: 0
@@ -85,7 +85,7 @@ function init() {
             {linkEl: null,
             linkId: "handoff",
             linkTitle: "handoff",
-            linkText: "Under construction...  Stay tuned!",
+            linkText: "A demo for a mobile-first workflow-tracking app for nurses in hospital clinical settings...",
             linkColor: "#ffbe00",
             linkLeft: 0,
             linkTop: 0
