@@ -20,9 +20,13 @@ Setup items have multiple layers of functionality (a lighting instrument graphic
 
 Actors offer one of five different functionalities: 
   • toggle -- a toggle switch between two states
+  
   • slider -- draggable on horizontal or vertical axis
+  
   • dragger -- draggable anywhere within a confining rectangle
+  
   • setting -- a dragger or slider that controls the behavior of another item and changes its own state as it is "moved"
+  
   • trackpad -- a dragger that directly controls the position of a secondary item
   
 (Menu items are for future versions where navigation between instructional lessons will be required.)
