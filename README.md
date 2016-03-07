@@ -13,6 +13,9 @@ Object structures were developed to manage the various combinations of graphics 
 ######Page Objects
 Though it is a single-page application, the Page Object works as a conceptual organizer.  It is the largest data structure and contains the interactive components for each "page".  Most of these components are interactive (called "items"), and are grouped into five categories: setup, group, target, actor, menu.  
 
+######Item Objects
+This structure stores image file names and positioning information ("initLoc" and "dropLoc", for example, are arrays of x, y, width and height information which identify the starting screen location and image size when a page is loaded, then after user manipulation).  Items may have their own child items (such as a light with an on/off switch).
+
 Setup items have multiple layers of functionality (a lighting instrument graphic that has a user-operated spot/flood control, for example).  Group items are collections of multiple items that may be selected individually (e.g. lights of varying intensities).  Target items are graphics at specific screen locations that respond to other items that are dragged to the target location.  
 
 Actors offer one of five different functionalities: 
@@ -23,6 +26,3 @@ Actors offer one of five different functionalities:
   • trackpad -- a dragger that directly controls the position of a secondary item
   
 (Menu items are for future versions where navigation between instructional lessons will be required.)
-
-######Item Objects
-This structure stores image file names and positioning information ("initLoc" and "dropLoc", for example, are arrays of x, y, width and height information which identify the starting screen location and image size when a page is loaded, then after user manipulation).  Items may have their own child items (such as a light with an on/off switch).
