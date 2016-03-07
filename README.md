@@ -19,6 +19,7 @@ This structure stores image file names and positioning information ("initLoc" an
 Setup items have multiple layers of functionality (a lighting instrument graphic that has a user-operated spot/flood control, for example).  Group items are collections of multiple items that may be selected individually (e.g. lights of varying intensities).  Target items are graphics at specific screen locations that respond to other items that are dragged to the target location.  
 
 Actors offer one of five different functionalities: 
+
   • toggle -- a toggle switch between two states
   
   • slider -- draggable on horizontal or vertical axis
